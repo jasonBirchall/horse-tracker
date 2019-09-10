@@ -1,5 +1,5 @@
 # Horse Tracker
-The intention of this project is to scrape the top ten horses in the UK and Ireland at specific times of day. This should run on any machine and collect metrics to be analysed at a later date. 
+The intention of this project is to create a tool to identify the top five horses that have shortened in the market from their initial price at a particular time of day. The should run on any machine and collect metrics to be analysed at a later date.
 
 ## How it works
 
