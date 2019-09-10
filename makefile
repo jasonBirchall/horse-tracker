@@ -1,5 +1,5 @@
 IMAGE := json0/horse-tracker
-TAG := 0.1
+TAG := 0.2
 
 build:
 	docker build -t $(IMAGE) .
@@ -10,8 +10,8 @@ push:
 
 shell:
 	docker run --rm -it \
-		-v $${PWD}/spec:/app \
-	$(IMAGE):$(TAG) sh
+		-v $${PWD}:/app \
+	$(IMAGE) bash
 
 test:
 	docker run --rm \
