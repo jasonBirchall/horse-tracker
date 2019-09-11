@@ -19,7 +19,7 @@ def screenshot(webpage, filename)
       c.background "white"
       c.extent "1000x1000"
       c.gravity "north"
-      c.quality 85
+      c.quality 100
     end
   end
 end
