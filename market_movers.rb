@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+# TODO: Add cronjob schedule for trigger at certain times of day: https://github.com/javan/whenever
+
 require 'webshot'
 
 at_the_races = "https://www.attheraces.com/market-movers"
@@ -13,7 +15,7 @@ def screenshot(webpage, filename)
   # Customize thumbnail generation (MiniMagick)
   # see: https://github.com/minimagick/minimagick
   ws = Webshot::Screenshot.instance
-  ws.capture("#{webpage}", "#{filename}-#{readable_timestamp}.png") do |magick|
+  ws.capture("#{webpage}", "/app/pics/#{filename}-#{readable_timestamp}.png") do |magick|
     magick.combine_options do |c|
       c.thumbnail "1000x"
       c.background "white"
