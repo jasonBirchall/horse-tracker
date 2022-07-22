@@ -1,12 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.0.0)
+    activesupport (7.0.3.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 0.7, < 2)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
-      zeitwerk (~> 2.1, >= 2.1.8)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     capybara (3.29.0)
@@ -18,17 +17,17 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     cliver (0.3.2)
-    concurrent-ruby (1.1.5)
+    concurrent-ruby (1.1.10)
     eventmachine (1.2.7)
     faye-websocket (0.10.9)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.5.1)
-    i18n (1.6.0)
+    i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     mini_magick (4.9.5)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
-    minitest (5.11.3)
+    minitest (5.16.2)
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     phantomjs (2.1.1.0)
@@ -41,11 +40,8 @@ GEM
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     regexp_parser (1.6.0)
-    screencap (0.1.4)
-      phantomjs
-    thread_safe (0.3.6)
-    tzinfo (1.2.5)
-      thread_safe (~> 0.1)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
     webshot (0.1.1)
       activesupport
       faye-websocket (>= 0.7.3, <= 0.10.9)
@@ -56,14 +52,12 @@ GEM
     websocket-extensions (0.1.4)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.1.10)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   phantomjs
-  screencap
   webshot
 
 BUNDLED WITH
